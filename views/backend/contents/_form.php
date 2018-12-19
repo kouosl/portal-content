@@ -22,7 +22,6 @@ use dosamigos\ckeditor\CKEditor;
         'preset'=>'basic',
         ]) ?>
 
-
     <?= $form->field($model, 'status')->dropDownList([ 'draft' => 'Draft', 'public' => 'Public', ], ['prompt' => '']) ?>
 
     <?= $form->field($model, 'type')->dropDownList([ 'page' => 'Page', 'blog' => 'Blog', ], ['prompt' => '']) ?>
