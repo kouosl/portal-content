@@ -20,9 +20,6 @@ use dosamigos\ckeditor\CKEditor;
     <?= $form->field($model, 'body')->widget(CKEditor::className(),[
         'options'=>['rows'=>6],
         'preset'=>'basic',
-
-
-
         ]) ?>
 
 
