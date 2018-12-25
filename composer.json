@@ -8,11 +8,18 @@
         {
             "name": "Ekrem HATİPOĞLU",
             "email": "ekrem.hatipoglu@outlook.com"
+        },
+        {
+            "name": "Mert İNAL",
+            "email": "mertinal1998@hotmail.com"
         }
     ],
     "autoload": {
         "psr-4": {
             "kouosl\\content\\": ""
         }
+    },
+    "require": {
+        "2amigos/yii2-ckeditor-widget" : "~2.1"
     }
 }
