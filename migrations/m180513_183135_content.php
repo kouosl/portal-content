@@ -1,7 +1,7 @@
 <?php
 
 use yii\db\Migration;
-
+//use Yii;
 /**
  * Class m180513_183135_content
  */
@@ -26,7 +26,22 @@ class m180513_183135_content extends Migration
             'date' => $this->dateTime(),
             'modified' => $this->dateTime()
         ], $tableOptions);
-
+        //$x=Yii::$app->formatter->asDate('now', 'yyyy-MM-dd');
+        $this->insert('content',
+        [
+       'id' => 1,
+       'name' => 'homepage',
+       'title' => 'Merhaba',
+       'body' => 'Merhaba',
+       'status' => 'draft',
+       'type' => 'page',
+       'author' => 1,
+       'date' => 'm-d-Y H:i:s',
+       'modified' =>'m-d-Y H:i:s',
+        ])
+       ->execute();
+            
+       
     }
 
     public function down()
